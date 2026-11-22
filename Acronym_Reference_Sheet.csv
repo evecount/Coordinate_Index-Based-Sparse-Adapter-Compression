@@ -1,0 +1,18 @@
+﻿Acronym,Subject / Course Domain,Full Meaning & Intuitive Plain-English Explanation
+PEFT,Model Fine-Tuning (ICT3507C),Parameter-Efficient Fine-Tuning — Freezing 99%+ of base model weights and training only a tiny plug-in adapter.
+LoRA,Model Fine-Tuning (ICT3507C),Low-Rank Adaptation — Compressing a 10x10 (100-weight) update matrix into two thin strips: a 10x1 column and a 1x10 row (20 weights).
+QLoRA,Model Fine-Tuning (ICT3507C),Quantized Low-Rank Adaptation — Compressing the frozen base model to 4-bit precision while training a LoRA adapter on top.
+VeRA,Coordinate / Index Fine-Tuning,Vector-based Random Matrix Adaptation — Freezing projection matrices and training only tiny 1D coordinate scaling vectors.
+LoRA-XS,Coordinate / Core Fine-Tuning,Low-Rank Adaptation Extremely Small — Training only a tiny r x r core coordinate matrix (e.g. 2x2 = 4 weights instead of 40).
+SFT,LLM Training Pipeline,"Supervised Fine-Tuning — Teaching a base model task-specific behavior or compressed syntax using curated (Input, Output) pairs."
+RLHF,LLM Alignment,Reinforcement Learning from Human Feedback — Aligning model probabilities using human preference rankings.
+DPO,LLM Alignment,"Direct Preference Optimization — Aligning a model directly on (Winner, Loser) response pairs without a separate reward model."
+BPE,Tokenization,Byte-Pair Encoding — Subword tokenization algorithm that iteratively merges frequent character pairs.
+BoW,Text Classification,Bag-of-Words — Counting words in isolation while ignoring sentence order and contextual relationships.
+TF-IDF,Text Classification,Term Frequency-Inverse Document Frequency — Weighting how distinctive a word is to a document vs. the whole corpus.
+NLI,Text Classification,"Natural Language Inference — Testing whether a text entails, contradicts, or is neutral toward a hypothesis label."
+AR,Generative Architectures,Autoregressive Model — Looks a little behind and steps forward sequentially: P(x_t | x_<t).
+Seq2Seq,Generative Architectures,Sequence-to-Sequence (Encoder-Decoder) — Looks both ways: encodes the full input before decoding a high-confidence output.
+T5 / FLAN-T5,Generative Architectures,Text-to-Text Transfer Transformer / Finetuned Language Net T5 — Casts every NLP task as text-to-text generation.
+DDPM / DiT,Diffusion Models,Denoising Diffusion Probabilistic Model / Diffusion Transformer — Iteratively refines Gaussian noise into images or video frames.
+KV Cache,Transformer Inference,Key-Value Cache — Memory buffer storing past token Key and Value tensors so autoregressive generation stays fast.
